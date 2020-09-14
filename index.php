@@ -23,7 +23,6 @@
             <a href="php/routing/navigator.php?route=join"><li>Join</li></a>
             <a href="php/routing/navigator.php?route=login"><li>Login</li></a>
         </ul>
-
     </nav>
 </body>
 </html>

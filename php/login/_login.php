@@ -1,5 +1,5 @@
 <?php
-        include "php/db.php";
+        include "../databaseConnection/db.php";
 
         $name = trim($_REQUEST["username"]);
         $pass = md5(trim($_REQUEST["password"]));

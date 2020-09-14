@@ -2,3 +2,9 @@ body{
     margin: 0px;
     padding: 0px;
 }
+
+h1{
+    font-size: 30px;
+    color:#239CD1!important;
+    font-family: Georgia, serif;
+}
