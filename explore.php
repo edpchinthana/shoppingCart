@@ -6,6 +6,8 @@
     <title>Explore</title>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="shortcut icon" href="/res/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="res/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <nav>

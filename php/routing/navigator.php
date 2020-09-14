@@ -3,16 +3,16 @@
         $route=$_GET['route'];
         switch($route){
             case "home":
-                header("location:/shoppingCart/");
+                header("location:../../");
             break;
             case "explore":
-                header("location:/shoppingCart/explore.php");
+                header("location:../../explore.php");
             break;
             case "join":
-                header("location:/shoppingCart/signup.php");
+                header("location:../../signup.php");
             break;
             case "login":
-                header("location:/shoppingCart/login.php");
+                header("location:../../login.php");
             break;
         }
     }else{
