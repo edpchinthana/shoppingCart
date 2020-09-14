@@ -12,9 +12,9 @@ h1{
 input{
     width: 220px;
     padding: 10px;
-    border: none;
+    border: 1px solid #239CD1;
     border-radius: 5px;
-    background-color: #d6eef8!important;
+    background-color: #fbfbfb!important;
 }
 
 .button{
@@ -26,6 +26,7 @@ input{
     background-color: white!important;
     color: #239CD1;
     font-size: 16px;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
