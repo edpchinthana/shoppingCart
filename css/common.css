@@ -10,5 +10,26 @@ h1{
 }
 
 input{
-    border-color: #239CD1;
+    width: 220px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6eef8!important;
+}
+
+.button{
+    width: auto;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #239CD1;
+    background-color: white!important;
+    color: #239CD1;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    color: white;
+    background-color: #239CD1!important;
 }

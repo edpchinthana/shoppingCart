@@ -38,7 +38,7 @@
         <div class="login-form">
         <label>Username</label> <input type="text" name="username"> <br>
         <label>Password</label> <input type="password" name="password"> <br>
-        <input type="submit" name="submit" value="submit">
+        <input class="button" type="submit" name="submit" value="submit">
 </div>
     </form>
 </div>
