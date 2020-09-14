@@ -32,10 +32,10 @@
         </ul>
     </nav>
 
-    <div class="login-form">
+    <div class="login-section">
     <form method="POST" action="php/login/_login.php">
     <h1>Login</h1>
-        <div>
+        <div class="login-form">
         <label>Username</label> <input type="text" name="username"> <br>
         <label>Password</label> <input type="password" name="password"> <br>
         <input type="submit" name="submit" value="submit">

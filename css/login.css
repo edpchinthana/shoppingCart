@@ -1,8 +1,14 @@
-.login-form{
+.login-section{
     display: flex;
     padding: 50px;
 }
 
-.login-form form{
+.login-section form{
     margin: auto;
 }
+
+.login-form {
+    padding: 20px;
+    font-size: 18px;
+}
+

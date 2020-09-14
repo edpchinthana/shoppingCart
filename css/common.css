@@ -8,3 +8,7 @@ h1{
     color:#239CD1!important;
     font-family: Georgia, serif;
 }
+
+input{
+    border-color: #239CD1;
+}

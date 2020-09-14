@@ -13,6 +13,6 @@
         if($stmt->rowCount() ==1){
             echo "ok";
         }else{
-            header('location:login.php?er=1');
+            header('location:../../login.php?er=1');
         }
 ?>
