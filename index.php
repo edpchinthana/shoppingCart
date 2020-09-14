@@ -1,3 +1,7 @@
+<?php
+    include "php/routing/navigator.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +14,14 @@
 <body>
     <nav>
         <ul>
-
-            <li><div>
+            <a><li><div>
                 <img class="navbar-logo" src="res/logo.png" alt="">
-            </div></li>
-            <li class="navbar-logo-text">EzShopping</li>
-            <li>Home</li>
-            <li>Explore</li>
-            <li>Join</li>
+            </div></li></a>
+            <a href="php/routing/navigator.php?route=home"><li class="navbar-logo-text">EzShopping</li></a>
+            <a href="php/routing/navigator.php?route=home"><li class="navbar-active">Home</li></a>
+            <a href="php/routing/navigator.php?route=explore"><li>Explore</li></a>
+            <a href="php/routing/navigator.php?route=join"><li>Join</li></a>
+            <a href="php/routing/navigator.php?route=login"><li>Login</li></a>
         </ul>
 
     </nav>
