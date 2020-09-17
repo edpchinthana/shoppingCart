@@ -6,6 +6,7 @@
     <title>Join</title>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/signup.css">
     <link rel="shortcut icon" href="/res/favicon.ico" type="image/x-icon">
     <link rel="icon" href="res/favicon.ico" type="image/x-icon">
 </head>
@@ -22,5 +23,19 @@
             <a href="php/routing/navigator.php?route=login"><li>Login</li></a>
         </ul>
     </nav>
+
+    <div class="signup-section">
+    <form method="POST" action="php/signup/_signup.php">
+    <h1>Signup</h1>
+        <div class="signup-form">
+        <label>Display Name</label><br><input type="text" name="username"> <br><br>
+        <label>Username</label><br><input type="text" name="username"> <br><br>
+        <label>Password</label><br><input type="password" name="password"> <br><br>
+        <label>Re-type Password </label><br><input type="password" name="password"> <br><br>
+        <label>Profile Picture</label><br><input type="file" name="username"> <br><br>
+        <input class="button" style="float:right;" type="submit" name="submit" value="Signup">
+</div>
+    </form>
+</div>
 </body>
 </html>

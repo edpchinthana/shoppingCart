@@ -1,0 +1,14 @@
+.signup-section{
+    display: flex;
+    padding: 50px;
+}
+
+.signup-section form{
+    margin: auto;
+}
+
+.signup-form {
+    padding: 20px;
+    font-size: 18px;
+}
+
