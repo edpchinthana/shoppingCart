@@ -33,7 +33,7 @@
     </nav>
 
     <div class="login-section">
-    <form method="POST" action="php/login/_login.php">
+    <form method="POST" action="php/authService/_login.php">
     <h1>Login</h1>
         <div class="login-form">
         <label>Username</label><br><input type="text" name="username"> <br>
