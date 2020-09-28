@@ -1,5 +1,5 @@
 <?php
-        include "../databaseConnection/db.php";
+        include_once "../databaseConnection/db.php";
         include "../fileUpload/_upload.php";
 
         $username = trim($_REQUEST["username"]);
@@ -11,10 +11,13 @@
         if($pass1 != $pass2){
             echo "Password does not match";
         }else{
-          try{ $_FILES["profilePic"];
+          if(doesUserExist($username)){
+            throw new Exception("Username already exists");
+          }else{
             uploadFile("profilePictures/");
-          }catch(Exception $e){
-            echo $e;
+
+
+            
           }
 
         // $query = "SELECT * FROM users WHERE username=:un AND password=:pass ;";
