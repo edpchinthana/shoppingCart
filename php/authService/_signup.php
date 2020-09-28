@@ -15,7 +15,7 @@
             throw new Exception("Username already exists");
           }else{
             uploadFile("profilePictures/");
-
+            
 
             
           }
