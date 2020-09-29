@@ -1,5 +1,7 @@
 <?php
-
+    include "php/databaseConnection/db.php";
+    include "php/models/category.php";
+    include "php/itemService/_getCategories.php";
 ?>
 
 <!DOCTYPE html>
@@ -37,8 +39,11 @@
                     <textarea name="" id="" cols="30" rows="5" style="resize: none;" required></textarea>
                     <span>Category</span>
                     <select>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
+                        <?php
+                            foreach($categoryList as $category){
+                                echo "<option value=".$category->getId()." >".$category->getName()."</option>";
+                            }
+                        ?>
                     </select>
                     <span>Price</span>
                     <input type="number" required style="width:120px!important;">

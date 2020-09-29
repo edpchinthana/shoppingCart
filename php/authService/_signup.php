@@ -1,7 +1,8 @@
 <?php
         include_once "../databaseConnection/db.php";
         include "../fileUpload/_upload.php";
-
+        include "_checkUser.php";
+        
         $username = trim($_REQUEST["username"]);
         $pass1 = md5(trim($_REQUEST["password1"]));
         $pass2 = md5(trim($_REQUEST["password2"]));
