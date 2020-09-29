@@ -24,18 +24,20 @@
         </ul>
     </nav>
 
-    <div class="signup-section">
-    <form method="POST" action="php/authService/_signup.php" enctype="multipart/form-data">
-    <h1>Signup</h1>
-        <div class="signup-form">
-        <label>Display Name</label><br><input type="text" name="displayName"> <br><br>
-        <label>Username</label><br><input type="text" name="username"> <br><br>
-        <label>Password</label><br><input type="password" name="password1"> <br><br>
-        <label>Re-type Password </label><br><input type="password" name="password2"> <br><br>
-        <label>Profile Picture</label><br><input type="file" name="file" id="profilePic"> <br><br>
-        <input class="button" style="float:right;" type="submit" name="submit" value="Signup">
-</div>
-    </form>
-</div>
+    <div id="content">
+        <div class="signup-section">
+        <form method="POST" action="php/authService/_signup.php" enctype="multipart/form-data">
+        <h1>Signup</h1>
+            <div class="signup-form">
+            <label>Display Name</label><br><input type="text" name="displayName"> <br><br>
+            <label>Username</label><br><input type="text" name="username"> <br><br>
+            <label>Password</label><br><input type="password" name="password1"> <br><br>
+            <label>Re-type Password </label><br><input type="password" name="password2"> <br><br>
+            <label>Profile Picture</label><br><input type="file" name="file" id="profilePic"> <br><br>
+            <input class="button" style="float:right;" type="submit" name="submit" value="Signup">
+        </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

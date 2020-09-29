@@ -32,14 +32,16 @@
         </ul>
     </nav>
 
+    <div id="content">
     <div class="login-section">
     <form method="POST" action="php/authService/_login.php">
     <h1>Login</h1>
         <div class="login-form">
-        <label>Username</label><br><input type="text" name="username"> <br>
-        <label>Password </label><br><input type="password" name="password"> <br><br>
-        <input class="button" style="float:right;" type="submit" name="submit" value="Login">
-</div>
+            <label>Username</label><br><input type="text" name="username"> <br>
+            <label>Password </label><br><input type="password" name="password"> <br><br>
+            <input class="button" style="float:right;" type="submit" name="submit" value="Login">
+        </div>
+        </div>
     </form>
 </div>
 </body>
