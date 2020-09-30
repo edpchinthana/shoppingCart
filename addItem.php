@@ -32,13 +32,13 @@
         <div id="content">
             <h1>Add Item</h1>
             <div id="addItems-body">
-                <form action="" id="addItemForm">
+                <form action="php/itemService/_addItem.php" method="POST" id="addItemForm">
                     <span>Item Name</span>
-                    <input type="text" required>
+                    <input type="text" name="name" required>
                     <span>Description</span>
-                    <textarea name="" id="" cols="30" rows="5" style="resize: none;" required></textarea>
+                    <textarea name="description" id="" cols="30" rows="5" style="resize: none;" required></textarea>
                     <span>Category</span>
-                    <select>
+                    <select name="category">
                         <?php
                             foreach($categoryList as $category){
                                 echo "<option value=".$category->getId()." >".$category->getName()."</option>";
@@ -46,11 +46,11 @@
                         ?>
                     </select>
                     <span>Price</span>
-                    <input type="number" required style="width:120px!important;">
+                    <input type="number" name="price" required style="width:120px!important;">
                     <span>Image-1</span>
-                    <input type="file" name="" id="" required>
+                    <input type="file" name="file" id="" required>
                     <span>Image-2</span>
-                    <input type="file" required>
+                    <input type="file" name="imagetwo" required>
                     <br>
                     <span style="text-align: right;">
                         <input class="button" style="width:100px!important" type="submit" value="Add Item">
