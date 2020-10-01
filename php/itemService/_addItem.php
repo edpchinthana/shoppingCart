@@ -6,11 +6,8 @@
      $itemDescription = $_REQUEST['description'];
      $itemPrice = $_REQUEST['price'];
      $category = $_REQUEST['category'];
-    // $image1 = $_FILES['image1'];
-     //$image2 = $_FILES['image2'];
      $image1Data = base64_encode(file_get_contents(addslashes($_FILES['file']['tmp_name'])));
      $imageType = getimageSize($_FILES['file']['tmp_name']);
-     //$image2Data = file_get_contents($_FILES['imagetwo']['tmp_name']);
      $item = new Item(NULL, $category,$itemName,$itemDescription,$itemPrice,$sellerId);
 
     $count = 0;

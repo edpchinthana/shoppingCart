@@ -1,6 +1,5 @@
 <?php
-    function doesUserExist($username){
-        include_once "../databaseConnection/db.php";
+    function doesUserExist($username, $conn){
         try{
         $query = "SELECT * FROM users WHERE username=:un;";
         $stmt=$conn->prepare($query);
