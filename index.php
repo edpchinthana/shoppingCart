@@ -1,5 +1,5 @@
 <?php
-    include "php/routing/navigator.php"
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -14,17 +14,8 @@
     <link rel="icon" href="res/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav>
-        <ul>
-            <a><li><div>
-                <img class="navbar-logo" src="res/logo.png" alt="">
-            </div></li></a>
-            <a href="index.php"><li class="navbar-logo-text">EzShopping</li></a>
-            <a href="index.php"><li class="navbar-active">Home</li></a>
-            <a href="explore.php"><li>Explore</li></a>
-            <a href="signup.php"><li>Join</li></a>
-            <a href="login.php"><li>Login</li></a>
-        </ul>
-    </nav>
+<?php
+        include "php/navigationBar/navigationBar.php";
+    ?>
 </body>
 </html>
