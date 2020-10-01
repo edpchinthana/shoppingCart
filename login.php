@@ -1,6 +1,6 @@
 <?php
     session_start();
-   // include "php/routing/only_guests.php";
+    include "php/routing/only_guests.php";
     if(isset($_GET['er'])){
         if($_GET['er']==1){
             echo "wrong password";
