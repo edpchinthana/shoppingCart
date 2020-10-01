@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    include "php/routing/only_buyers.php";
     if(isset($_GET['er'])){
         if($_GET['er']==1){
             echo "wrong password";
@@ -19,16 +21,16 @@
     <link rel="icon" href="res/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav>
+<nav>
         <ul>
             <a><li><div>
                 <img class="navbar-logo" src="res/logo.png" alt="">
             </div></li></a>
-            <a href="php/routing/navigator.php?route=home"><li class="navbar-logo-text">EzShopping</li></a>
-            <a href="php/routing/navigator.php?route=home"><li>Home</li></a>
-            <a href="php/routing/navigator.php?route=explore"><li>Explore</li></a>
-            <a href="php/routing/navigator.php?route=join"><li>Join</li></a>
-            <a href="php/routing/navigator.php?route=login"><li class="navbar-active">Login</li></a>
+            <a href="index.php"><li class="navbar-logo-text">EzShopping</li></a>
+            <a href="index.php"><li>Home</li></a>
+            <a href="explore.php"><li>Explore</li></a>
+            <a href="signup.php"><li>Join</li></a>
+            <a href="login.php"><li class="navbar-active">Login</li></a>
         </ul>
     </nav>
 

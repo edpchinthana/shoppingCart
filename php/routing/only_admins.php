@@ -1,10 +1,10 @@
 <?php
     if(isset($_SESSION['is_logged_in'])){
         $role = $_SESSION['role'];
-        switch($role){
-         
+        if($role!="admin"){
+            header("location:index.php");
         }
     }else{
-        //header("location:/shoppingCart/index.php");
+        header("location:index.php");
     }
 ?>

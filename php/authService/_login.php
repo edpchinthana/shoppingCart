@@ -13,7 +13,7 @@
         if($stmt->rowCount() ==1){
             session_start();
             $_SESSION['is_logged_in'] = true;
-            $_SESSION['role'] = "user";
+            $_SESSION['role'] = "admin";
             $_SESSION['username'] = $name;
             $_SESSION['display_name'] = "display name";
             $_SESSION['photo'] = "sample photo";

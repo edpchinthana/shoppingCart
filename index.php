@@ -19,11 +19,11 @@
             <a><li><div>
                 <img class="navbar-logo" src="res/logo.png" alt="">
             </div></li></a>
-            <a href="php/routing/navigator.php?route=home"><li class="navbar-logo-text">EzShopping</li></a>
-            <a href="php/routing/navigator.php?route=home"><li class="navbar-active">Home</li></a>
-            <a href="php/routing/navigator.php?route=explore"><li>Explore</li></a>
-            <a href="php/routing/navigator.php?route=join"><li>Join</li></a>
-            <a href="php/routing/navigator.php?route=login"><li>Login</li></a>
+            <a href="index.php"><li class="navbar-logo-text">EzShopping</li></a>
+            <a href="index.php"><li class="navbar-active">Home</li></a>
+            <a href="explore.php"><li>Explore</li></a>
+            <a href="signup.php"><li>Join</li></a>
+            <a href="login.php"><li>Login</li></a>
         </ul>
     </nav>
 </body>
