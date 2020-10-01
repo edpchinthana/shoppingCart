@@ -32,7 +32,7 @@
         <div id="content">
             <h1>Add Item</h1>
             <div id="addItems-body">
-                <form action="php/itemService/_addItem.php" method="POST" id="addItemForm">
+                <form action="php/itemService/_addItem.php" method="POST" id="addItemForm" enctype="multipart/form-data">
                     <span>Item Name</span>
                     <input type="text" name="name" required>
                     <span>Description</span>
@@ -49,9 +49,6 @@
                     <input type="number" name="price" required style="width:120px!important;">
                     <span>Image-1</span>
                     <input type="file" name="file" id="" required>
-                    <span>Image-2</span>
-                    <input type="file" name="imagetwo" required>
-                    <br>
                     <span style="text-align: right;">
                         <input class="button" style="width:100px!important" type="submit" value="Add Item">
                     </span>
