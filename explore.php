@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+        session_start();
+    ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,16 +13,8 @@
 </head>
 <body>
 <nav>
-        <ul>
-            <a><li><div>
-                <img class="navbar-logo" src="res/logo.png" alt="">
-            </div></li></a>
-            <a href="index.php"><li class="navbar-logo-text">EzShopping</li></a>
-            <a href="index.php"><li>Home</li></a>
-            <a href="explore.php"><li class="navbar-active">Explore</li></a>
-            <a href="signup.php"><li>Join</li></a>
-            <a href="login.php"><li>Login</li></a>
-        </ul>
-    </nav>
+<?php
+        include "php/navigationBar/navigationBar.php";
+    ?>
 </body>
 </html>

@@ -11,19 +11,9 @@
     <link rel="icon" href="res/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<nav>
-        <ul>
-            <a><li><div>
-                <img class="navbar-logo" src="res/logo.png" alt="">
-            </div></li></a>
-            <a href="index.php"><li class="navbar-logo-text">EzShopping</li></a>
-            <a href="index.php"><li>Home</li></a>
-            <a href="explore.php"><li>Explore</li></a>
-            <a href="signup.php"><li class="navbar-active">Join</li></a>
-            <a href="login.php"><li>Login</li></a>
-        </ul>
-    </nav>
-
+<?php
+        include "php/navigationBar/navigationBar.php";
+    ?>
     <div id="content">
         <div class="signup-section">
         <form method="POST" action="php/authService/_signup.php" enctype="multipart/form-data">

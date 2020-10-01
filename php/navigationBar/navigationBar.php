@@ -11,7 +11,7 @@
                     <a href='index.php'><li class='navbar-logo-text'>EzShopping</li></a>
                     <a href='index.php'><li>Home</li></a>
                     <a href='explore.php'><li>Explore</li></a>
-                    <a href='php/authService/_logout.php'><li class='navbar-active'>Logout</li></a>
+                    <a href='php/authService/_logout.php'><li>Logout</li></a>
                 </ul>
             </nav>";
             break;
@@ -24,7 +24,7 @@
                     <a href='index.php'><li class='navbar-logo-text'>EzShopping</li></a>
                     <a href='index.php'><li>Home</li></a>
                     <a href='explore.php'><li>Explore</li></a>
-                    <a href='php/authService/_logout.php'><li class='navbar-active'>Logout</li></a>
+                    <a href='php/authService/_logout.php'><li>Logout</li></a>
                 </ul>
             </nav>";
             break;
@@ -37,7 +37,7 @@
                     <a href='index.php'><li class='navbar-logo-text'>EzShopping</li></a>
                     <a href='index.php'><li>Home</li></a>
                     <a href='explore.php'><li>Explore</li></a>
-                    <a href='php/authService/_logout.php'><li class='navbar-active'>Logout</li></a>
+                    <a href='php/authService/_logout.php'><li>Logout</li></a>
                 </ul>
             </nav>";
             break;
@@ -52,7 +52,7 @@
             <a href='index.php'><li>Home</li></a>
             <a href='explore.php'><li>Explore</li></a>
             <a href='signup.php'><li>Join</li></a>
-            <a href='login.php'><li class='navbar-active'>Login</li></a>
+            <a href='login.php'><li>Login</li></a>
         </ul>
     </nav>";
     }
