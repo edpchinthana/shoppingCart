@@ -6,6 +6,9 @@
         var $description;
         var $price;
         var $sellerId;
+        var $imageId;
+        var $imageType;
+        var $image;
 
         function __construct($id, $categoryId, $name, $description, $price, $sellerId){
             $this -> id = $id;
@@ -38,6 +41,30 @@
 
         function getSellerId(){
             return $this -> sellerId;
+        }
+
+        function getImageId(){
+            return $this -> imageId;
+        }
+
+        function getImageType(){
+            return $this -> imageType;
+        }
+
+        function getImage(){
+            return $this -> image;
+        }
+
+        function setImageId($imageId){
+            $this->imageId = $imageId;
+        }
+
+        function setImageType($imageType){
+            $this->imageType = $imageType;
+        }
+
+        function setImage($image){
+            $this->image = $image;
         }
     }
 ?>

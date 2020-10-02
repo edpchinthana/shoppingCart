@@ -1,7 +1,8 @@
 <?php
+    session_start();
     //include "php/routing/only_buyers.php";
     include "php/databaseConnection/db.php";
-    session_start();
+    
     if(isset($_SESSION['username'])){
         $username = $_SESSION['username'];
         echo "<h1>".$_SESSION['displayName']."</h1><br><br>";
