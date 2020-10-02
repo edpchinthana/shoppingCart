@@ -9,14 +9,17 @@
         $stmt -> bindParam("un",$name);
         $stmt -> bindParam("pass", $pass);
         $stmt->execute();
-    
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if($stmt->rowCount() ==1){
             session_start();
             $_SESSION['is_logged_in'] = true;
-            $_SESSION['role'] = "admin";
-            $_SESSION['username'] = $name;
-            $_SESSION['display_name'] = "display name";
-            $_SESSION['photo'] = "sample photo";
+            while($row = $stmt->fetch()){
+                $_SESSION['role'] = $row['role'];
+                $_SESSION['username'] = $row['username'];
+                $_SESSION['displayName'] =$row['displayName'];
+                $_SESSION['picture'] = $row['picture'];
+                $_SESSION['pictureType'] = $row['pictureType'];
+            }
             header('location:../../showProfile.php');
         }else{
             header('location:../../login.php?er=1');
